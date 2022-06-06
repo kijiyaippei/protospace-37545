@@ -118,6 +118,13 @@ a {
   cursor: pointer;
 }
 
+.user_name {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 /* メイン */
 
 .greeting{

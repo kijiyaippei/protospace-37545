@@ -44,8 +44,8 @@ def update
     end
 
 def destroy
-    prototype = Prototype.find(params[:id])
-    prototype.destroy
+    @prototype = Prototype.find(params[:id])
+    @prototype.destroy
     render :index
 end
 

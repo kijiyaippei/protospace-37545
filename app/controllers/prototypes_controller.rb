@@ -19,6 +19,7 @@ render :new
 end
 
 def show
+
     @prototype = Prototype.find(params[:id])
     @comment = Comment.new
     @comments = @prototype.comments.includes(:user)
@@ -44,9 +45,11 @@ def update
     end
 
 def destroy
+    
     @prototype = Prototype.find(params[:id])
     @prototype.destroy
-    render :index
+    redirect_to action: :index
+
 end
 
 private
